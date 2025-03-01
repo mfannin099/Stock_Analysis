@@ -6,7 +6,7 @@ Some books to go with the project:
     Probablistic MAchine learning for Finance and Investing
 
 Goals
-1. Make Github Repo
+1. Make Github Repo (Done)
 2. Get data from Yahoo Finance
 3. Predictions
 4. Follow along some of the stuff in the books
