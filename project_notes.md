@@ -1,9 +1,9 @@
 This project is going to take stock data from hopefully the yahoo finance (package/api)?? Do some time series analysis.
 
 Some books to go with the project: 
-    Python for Finance
+    Python for Finance - (Done)
     Python for Algorithmic Trading
-    Probablistic MAchine learning for Finance and Investing
+    Probablistic Machine learning for Finance and Investing
 
 Goals
 1. Make Github Repo (Done)
