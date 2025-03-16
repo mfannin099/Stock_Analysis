@@ -9,7 +9,7 @@ Goals
 1. Make Github Repo (Done)
 2. Get data from Yahoo Finance (Done)
     Do for multiple stocks
-3. EDA for Nike stock
+3. EDA for Nike stock (Done)
 4. Predictions
 5. Follow along some of the stuff in the books
         Monte Carlo Simulation
