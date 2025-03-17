@@ -13,4 +13,6 @@ Goals
 4. Predictions
 5. Follow along some of the stuff in the books
         Monte Carlo Simulation
+6. Create Script to analyze stocks
+7. Bins along time (and look at each bin in stocks)
 
