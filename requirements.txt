@@ -6,3 +6,4 @@ matplotlib
 scipy
 ta
 statsmodels
+multiprocess
