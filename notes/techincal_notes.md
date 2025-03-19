@@ -14,8 +14,9 @@ Merge new branch into main: git checkout main, git branch, git merge feature_bra
 
 ## Python 
 
-- The multiprocessing package in Python is used to run multiple processes in parallel, utilizing multiple CPU cores to speed up execution. Use ChatGPT for examples
-- Try simple moving average, random walk, Linear Regression
+- The multiprocessing package in Python is used to run multiple processes in parallel, utilizing multiple CPU cores to speed up execution. Use ChatGPT for examples.... trying now
+- Try simple moving average, random walk, Linear Regression (Done)
+- Arima, other time series forecasting
 - try using this package: Pyalgotrade
 
 
