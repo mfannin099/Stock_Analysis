@@ -1,0 +1,87 @@
+# Paraguay holidays en_US localization.
+# Authors: ~Jhellico <jhellico@gmail.com>, (c) 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Holidays 0.22\n"
+"POT-Creation-Date: 2023-03-05 12:33+0200\n"
+"PO-Revision-Date: 2023-03-05 13:05+0200\n"
+"Last-Translator: ~Jhellico <jhellico@gmail.com>\n"
+"Language-Team: Python Holidays localization team\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. Public holiday.
+#: ./holidays/countries/paraguay.py:31
+msgid "Asueto adicionale"
+msgstr "Public holiday"
+
+#. Public sector holiday.
+#: ./holidays/countries/paraguay.py:33
+msgid "Asueto de la Administración Pública"
+msgstr "Public sector holiday"
+
+#. New Year's Day.
+#: ./holidays/countries/paraguay.py:156
+msgid "Año Nuevo"
+msgstr "New Year's Day"
+
+#. Patriots Day.
+#: ./holidays/countries/paraguay.py:166
+msgid "Día de los Héroes de la Patria"
+msgstr "Patriots Day"
+
+#. Maundy Thursday.
+#: ./holidays/countries/paraguay.py:171
+msgid "Jueves Santo"
+msgstr "Maundy Thursday"
+
+#. Good Friday.
+#: ./holidays/countries/paraguay.py:174
+msgid "Viernes Santo"
+msgstr "Good Friday"
+
+#. Easter Day.
+#: ./holidays/countries/paraguay.py:177
+msgid "Día de Pascuas"
+msgstr "Easter Day"
+
+#. Labour Day.
+#: ./holidays/countries/paraguay.py:180
+msgid "Día del Trabajador"
+msgstr "Labour Day"
+
+#. Independence Day.
+#: ./holidays/countries/paraguay.py:183
+msgid "Día de la Independencia Nacional"
+msgstr "Independence Day"
+
+#. Chaco Armistice Day.
+#: ./holidays/countries/paraguay.py:197
+msgid "Día de la Paz del Chaco"
+msgstr "Chaco Armistice Day"
+
+#. Asuncion Foundation's Day.
+#: ./holidays/countries/paraguay.py:205
+msgid "Día de la Fundación de Asunción"
+msgstr "Asuncion Foundation's Day"
+
+#. Boqueron Battle Day.
+#: ./holidays/countries/paraguay.py:222
+msgid "Día de la Batalla de Boquerón"
+msgstr "Boqueron Battle Day"
+
+#. Caacupe Virgin Day.
+#: ./holidays/countries/paraguay.py:230
+msgid "Día de la Virgen de Caacupé"
+msgstr "Caacupe Virgin Day"
+
+#. Christmas.
+#: ./holidays/countries/paraguay.py:237
+msgid "Navidad"
+msgstr "Christmas"

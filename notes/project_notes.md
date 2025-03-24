@@ -10,11 +10,11 @@ Goals
 2. Get data from Yahoo Finance (Done)
     Do for multiple stocks
 3. EDA for Nike stock (Done)
-4. Predictions
+4. Predictions... WIP now
 5. Follow along some of the stuff in the books
         Monte Carlo Simulation (Done)
         Write a script to do a Monte Carlo simulation and give best/worst cases & liklihood of returns (like I have in notebook).. goes with 6.
-6. Create Script to analyze stocks
+6. Create Script to analyze stocks (Done)
 7. Bins along time (and look at each bin in stocks) (Done)
 8. Streamlit App
     Host on Github & Streamlit Community Cloud

@@ -7,3 +7,5 @@ scipy
 ta
 statsmodels
 multiprocess
+holidays
+scikit-learn
