@@ -1,0 +1,8 @@
+<script>start("c:\\Users\\matt\\Desktop\\DataProjects\\AlgorithmicTrading\\stocks\\");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("Include","Include",1,0,"0 B",1740863567,"3/1/25, 4:12:47 PM");</script>
+<script>addRow("Lib","Lib",1,0,"0 B",1740863567,"3/1/25, 4:12:47 PM");</script>
+<script>addRow("Scripts","Scripts",1,0,"0 B",1742264263,"3/17/25, 10:17:43 PM");</script>
+<script>addRow("share","share",1,0,"0 B",1741315419,"3/6/25, 9:43:39 PM");</script>
+<script>addRow("xgboost","xgboost",1,0,"0 B",1742938953,"3/25/25, 5:42:33 PM");</script>
+<script>addRow("pyvenv.cfg","pyvenv.cfg",0,163,"163 B",1740863567,"3/1/25, 4:12:47 PM");</script>
