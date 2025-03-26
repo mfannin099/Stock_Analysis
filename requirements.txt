@@ -1,6 +1,6 @@
-yfinance = 0.2.54
-numpy==1.21.6
-pandas==1.3.5
+yfinance
+numpy
+pandas
 seaborn
 matplotlib
 scipy
@@ -9,3 +9,4 @@ statsmodels
 multiprocess
 holidays
 scikit-learn
+xgboost
