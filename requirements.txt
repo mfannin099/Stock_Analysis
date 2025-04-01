@@ -12,3 +12,4 @@ scikit-learn
 xgboost
 voila
 ipywidgets
+plotly-express
