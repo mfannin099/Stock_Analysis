@@ -10,3 +10,5 @@ multiprocess
 holidays
 scikit-learn
 xgboost
+voila
+ipywidgets
