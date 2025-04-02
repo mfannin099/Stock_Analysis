@@ -105,9 +105,19 @@ def get_lag_values(df,days_of_trading_to_predict):
         lag2_feature = 0
         print(f'No lag feature value for: {(days_of_trading_to_predict*2) + 1} days out')
 
-
-
     return lag1_feature, lag2_feature
+
+def get_closest_business_day(lag, df, pred_df, column):
+
+    last_index_pred_df = df.index[-1]
+    target_index = last_index_pred_df - lag
+
+    # Now, get the next `len(pred_df)` rows (which is the length of predictions) from df
+    end_index = target_index + len(pred_df) # Make sure we don't exceed df length
+
+    # Extract the 'Close' values for the range of indices from target_index to end_index
+    rows = df.loc[target_index:end_index-1, column].values  # Adjust end_index to be exclusive
+    return rows
 
 
 def xgboost(df,pred_df, days_of_trading_to_predict):
@@ -151,14 +161,16 @@ def xgboost(df,pred_df, days_of_trading_to_predict):
 
 
     # Adding Lag Features
-    predictions_df_xgb[f'lag_{lag1}'] = xgboost_df['Close'].shift(lag1).iloc[-len(predictions_df_xgb):].values
-    predictions_df_xgb[f'lag_{lag2}'] = xgboost_df['Close'].shift(lag2).iloc[-len(predictions_df_xgb):].values
+    predictions_df_xgb[f'lag_{lag1}'] = get_closest_business_day(lag1, xgboost_df, predictions_df_xgb, "Close")
+    predictions_df_xgb[f'lag_{lag2}'] = get_closest_business_day(lag2, xgboost_df, predictions_df_xgb, "Close")
 
-    predictions_df_xgb[f'lag_{lag1}_volume'] = xgboost_df['Volume'].shift(lag1).fillna(0)
-    predictions_df_xgb[f'lag_{lag2}_volume'] = xgboost_df['Volume'].shift(lag2).fillna(0)
+    predictions_df_xgb[f'lag_{lag1}_volume'] = get_closest_business_day(lag1, xgboost_df, predictions_df_xgb, "Volume")
+    predictions_df_xgb[f'lag_{lag2}_volume'] = get_closest_business_day(lag2, xgboost_df, predictions_df_xgb, "Volume")
+
 
 
     X_train = xgboost_df[['days_past', 'months_past', 'years_past', f'lag_{lag1}', f'lag_{lag2}', 'month',f'lag_{lag1}_volume', f'lag_{lag2}_volume', 'day', 'day_of_week']]
+    X_train = X_train.fillna(0)
     y_train = xgboost_df['Close']  
 
     X_forecast = predictions_df_xgb[['days_past', 'months_past', 'years_past', f'lag_{lag1}', f'lag_{lag2}', 'month',f'lag_{lag1}_volume', f'lag_{lag2}_volume', 'day', 'day_of_week']]
