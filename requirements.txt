@@ -13,3 +13,4 @@ xgboost
 voila
 ipywidgets
 plotly-express
+streamlit
